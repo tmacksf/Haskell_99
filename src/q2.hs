@@ -1,3 +1,4 @@
+-- Find the last-but-one (or second-last) element of a list.
 -- recursive solution
 
 lastMinusOne :: [a] -> a
