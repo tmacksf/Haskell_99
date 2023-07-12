@@ -6,3 +6,5 @@ last' :: [a] -> a
 last' [] = error "no last in empty list"
 last' (x:[]) = x
 last' (x:xs) = last (xs) 
+
+last'' = head . reverse
