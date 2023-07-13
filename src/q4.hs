@@ -2,5 +2,7 @@
 
 numElements :: [a] -> Integer 
 numElements [] = 0
-numElements [x] = 1
 numElements (x:xs) = 1 + numElements xs
+
+numElements' :: [a] -> Int 
+numElements' = sum . map (\_->1)
