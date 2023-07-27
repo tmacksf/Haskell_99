@@ -10,6 +10,5 @@ encode :: (Eq a) => [a] -> [Output a]
 encode [] = [] 
 encode [x] = [Single x]
 encode (x:xs) = (convert (1 + (length $ takeWhile (==x) xs )) x) : encode (dropWhile (==x) xs) where 
-    convert :: Int -> a -> Output a
     convert 1 a = (Single a)
     convert x a = (Multiple x a)
